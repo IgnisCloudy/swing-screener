@@ -1,0 +1,38 @@
+name: Daily NSE swing scan (v3)
+
+on:
+  schedule:
+    - cron: '15 12 * * 1-5'   # 17:45 IST, after the close
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    timeout-minutes: 50
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+      - run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+      - name: Self-test before scanning
+        run: python test_engine.py
+      - name: Run scan
+        run: python scan_job_v5.py
+      - name: Commit results
+        run: |
+          git config user.name "swing-screener-bot"
+          git config user.email "actions@github.com"
+          git add data/latest.json data/history/ || true
+          if git diff --staged --quiet; then
+            echo "no changes"
+          else
+            git commit -m "scan: $(date -u +%Y-%m-%d)"
+            git push
+          fi
