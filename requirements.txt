@@ -3,6 +3,7 @@ numpy>=1.24
 pyarrow>=14.0
 yfinance>=0.2.40
 requests>=2.31
-# optional — NSE delivery %, live scans only, safe to omit
+streamlit>=1.50
+plotly>=5.20
 jugaad-data>=0.26
 nsepython>=2.9
