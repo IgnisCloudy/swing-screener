@@ -1,0 +1,2 @@
+symbol,name,sector,score,price,prev_high,entry,stop,target1,risk_pct,t1_pct,rr,trail_ema9,rsi,vol_ratio,delivery_pct,volume_quality,atr_pct,dist_52w_pct,at_multiyear_high,market_cap_cr,turnover_cr,breakout,squeeze
+ARTEMISMED,Artemis Medicare Services Limited,Unmapped,7.4,301.25,305.25,306.78,291.3,331.55,5.05,8.07,1.6,310.185851879142,37.00483368470471,0.0777530344746996,,—,4.111106418833144,20.47254231574931,False,,47.411335734070434,False,False
