@@ -1,0 +1,3 @@
+symbol,name,sector,score,price,prev_high,entry,stop,target1,risk_pct,t1_pct,rr,trail_ema9,rsi,vol_ratio,delivery_pct,volume_quality,atr_pct,dist_52w_pct,at_multiyear_high,market_cap_cr,turnover_cr,breakout,squeeze
+SINGERIND,Singer India Limited,Unmapped,36.8,88.91000366210938,90.9000015258789,91.35,84.4,102.47,7.61,12.17,1.6,89.03538411797695,56.427510339932375,0.25171308066044906,,—,6.253656641733084,9.524771853767474,False,,5.088902620868607,False,False
+ARTEMISMED,Artemis Medicare Services Limited,Unmapped,27.9,300.25,304.0,305.52,289.96,330.42,5.09,8.15,1.6,294.55120248274636,46.57878613975291,1.7145016987385726,,—,4.147100347230859,20.736533876526906,False,,5.83717769867218,False,False
